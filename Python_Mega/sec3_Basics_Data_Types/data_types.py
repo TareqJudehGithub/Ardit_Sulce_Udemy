@@ -10,7 +10,7 @@ Lists
 one_ten = list(range(1, 11))
 print(one_ten)
 
-
+one_ten.insert(len(one_ten), 11)
 print('\n')
 
 
@@ -24,13 +24,6 @@ def mean(grades):
      return result
 
 
-if __name__ == '__main__':
-     
-     student_grade = list(map(int, input('Enter students grades: ').split()))
-
-     print(mean(student_grade))
-
-
 """
 dir() keyword
  - dir lists all attributes of a data type
@@ -41,28 +34,31 @@ help(object.attribute)
 """
 
 
-# Python program showing how to
-# multiple input using split
- 
-# taking two inputs at a time
-# x, y = input("Enter a two value: ").split()
-# print("Number of boys: ", x)
-# print("Number of girls: ", y)
-# print()
- 
-# # taking three inputs at a time
-# x, y, z = input("Enter a three value: ").split()
-# print("Total number of students: ", x)
-# print("Number of boys is : ", y)
-# print("Number of girls is : ", z)
-# print()
- 
-# # taking two inputs at a time
-# a, b = input("Enter a two value: ").split()
-# print("First number is {} and second number is {}".format(a, b))
-# print()
- 
-# # taking multiple inputs at a time
-# # and type casting using list() function
-# x = list(map(int, input("Enter a multiple value: ").split()))
-# print("List of students: ", x)
+# Now, calculate avg heights for students in a dict
+
+grade_5_b = {
+     'leen': 150,
+     'ela': 153,
+     'meral': 145,
+     'ghazi': 135,
+     'kamooleh': 159
+}
+
+def avg_height():
+     """Average height calculator"""
+     return sum(grade_5_b.values()) / len(grade_5_b)
+
+new_set = {1, 2, 3, 5, 6}
+new_set.add(4)
+# sorted(new_set)
+
+if __name__ == '__main__':
+     
+     student_grade = list(map(int, input('Enter students grades: ').split()))
+     print(mean(student_grade))
+     print('')
+
+     print(avg_height())
+
+     print(new_set)
+     print(one_ten)
