@@ -25,7 +25,7 @@ def temp_today(temp):
 
 def old_str_format():
     
-    valid_email = r'(^[a-z0-9._]{3}+@+[a-z]+\.[a-z]{3}$)'
+    valid_email = r'(^([a-z0-9._]{4,12})+@+([a-z]{3,7})+\.[a-z]{3}$)'
     validator = re.compile(valid_email)
 
     name = input('Enter name: ').title()
