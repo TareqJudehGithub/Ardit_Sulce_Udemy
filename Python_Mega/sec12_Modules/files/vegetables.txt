@@ -1,0 +1,6 @@
+cucumber
+tomato
+onion
+potato
+green beans
+garlic
