@@ -1,3 +1,4 @@
+from datetime import date
 import pandas
 import os
 
@@ -25,13 +26,31 @@ def read_file(file):
                return pandas.read_excel(file, sheet_name=1)
           
           elif '.txt' in file:
-               return pandas.read_csv(file, sep=';')
-          
+               # returning data with default header if one was not included
+               # data = pandas.read_csv(file, header=None)
+               # return data
+
+               data = pandas.read_csv('./data.txt')
+               # manual header assignment:
+               data.columns = [
+                    'ID', 'Address', 'City', 'Zip', 'Country', 'Customer', 'Emp'
+               ]
+               # manual index assignment:
+               
+               # we could assign a new variable..
+               # data_index = data.set_index('ID')
+               # return data_index
+
+               # or add the inplace parameters
+               data.set_index('ID', inplace=True)
+               return data
+
+
           else:
                return 'File format not supported.'
 
 if __name__ == "__main__":
-     print(read_file("./supermarkets-semi-colons.txt"))
+     print(read_file("./data.txt"))
 
 
 
