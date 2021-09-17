@@ -25,6 +25,11 @@ Pandas library
 
      Help tab provides more shortcuts.
 
+ Jupyter themes
+  - To be able to change Jupyter UI to darkmood, install jupyterthemes package.
+    $ pip install jupyterthemes
+    - Now start or restart Jupyter running  $ jupyter notebook
+
 CSV files
  - CSV stands for comma seperated values.
  - A text files where values are seperated by commas.
@@ -82,10 +87,6 @@ Setting index columns
  - the drop=False parameter will keep the column selected as index in it's original
    location.
    
-     
-
-
-
 """
 
 import pandas

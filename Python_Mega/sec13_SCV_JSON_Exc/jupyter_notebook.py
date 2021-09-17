@@ -1,6 +1,7 @@
-from datetime import date
 import pandas
 import os
+
+
 
 
 # df = pandas.read_csv("supermarkets_csv.csv")
@@ -48,10 +49,45 @@ def read_file(file):
 
           else:
                return 'File format not supported.'
+          
+
+def index_labeling():
+     data = pandas.read_csv("./data.txt")
+     data.columns = [
+                    'ID', 'Address', 'City', 'Zip', 'Country', 'Customer', 'Emp'
+               ]
+     # get me the first and the 2nd rows from data.txt using label slicing
+     data_sliced = data.loc[0:1, "ID": "Emp"]
+     
+
+     # get me a list of all our customers from data.txt
+     data_sliced = data.loc[:, "Customer"]
+
+     # save ur result above in a list
+     customers_list = list(data_sliced)
+
+     # return customers_list
+
+     # indexing:
+     # get me all customers
+     customer_indexing = data.iloc[:, -2]
+
+     # in a list?
+     cust_list = list(customer_indexing)
+     cust_list.sort()
+
+     # how about in a string format?
+     cust_str = " ".join(cust_list)
+    
+
+     return cust_str
+
+
+
 
 if __name__ == "__main__":
-     print(read_file("./data.txt"))
-
+     # print(read_file("./data.txt"))
+     print(index_labeling())
 
 
 """
