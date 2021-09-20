@@ -25,7 +25,7 @@ def resize_imgs():
     scale_percent = 50
     img_dim = image.shape
     img_width = int(img_dim[1] * scale_percent/100)
-    img_height = int(img_dim[0] * 125/100)
+    img_height = int(img_dim[0] * scale_percent/100)
 
     # downscale all images
     resize_imgs = cv2.resize(src=image, dsize=(img_width, img_height))
