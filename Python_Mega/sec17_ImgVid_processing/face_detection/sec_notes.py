@@ -7,6 +7,17 @@ Computer Vision
    computer vision.
 
 
-OpenCV 
+Face detection in Python
 
+ - cascade classifier object
+    cascade classifier object searches faces on images.
+ - CV2 is more accurate detecting faces on grayscale images.
+
+(x, y)
+    -----------
+    |         |
+    |         |
+    |         |
+    -----------  
+              (x+w, y+h)
 """
