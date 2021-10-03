@@ -28,6 +28,7 @@ print(img_to_arr)
 
 
 print("")
+# write(save) new images
 print("convert array into an image")
 arr_to_img = cv2.imwrite(filename="./images/image_01.png", img=img_to_arr)
 
@@ -50,6 +51,7 @@ for i in img_to_arr.flat:
   print(i)
 
 print("")
+print("NumPy")
 # stocking(combining) numpy arrays
 print("stack two or more numpy arrays horizontally")
 # stack two or more numpy arrays horizontally

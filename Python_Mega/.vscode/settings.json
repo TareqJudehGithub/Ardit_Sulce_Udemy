@@ -1,0 +1,30 @@
+{
+	"cSpell.words": [
+		".hsplit()",
+		".vsplit()",
+		"arange",
+		"arrs",
+		"Bready",
+		"casc",
+		"cust",
+		"DSHOW",
+		"dsize",
+		"geopy",
+		"hsplit",
+		"hstack",
+		"imgs",
+		"imread",
+		"imshow",
+		"imwrite",
+		"inplace",
+		"jupyterthemes",
+		"ndim",
+		"nums",
+		"opencv",
+		"openpyxl",
+		"volc",
+		"vsplit",
+		"vstack",
+		"xlrd"
+	]
+}
